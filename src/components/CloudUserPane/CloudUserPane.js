@@ -42,7 +42,7 @@ const CloudUserPane = (props, state) => {
   let content = <div />; // default
   if (loading) {
     content = loadingState;
-  } else if (apps && !apps.length) {
+  } else if (true) { //(apps && !apps.length) {
     content = emptyState;
   } else if (apps) {
     const items = apps.map(app =>
